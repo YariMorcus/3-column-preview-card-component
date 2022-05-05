@@ -12,6 +12,6 @@ Otherwise Gulp will **not** work, and as a result browsersync and sass to css co
 | Compile sass to css **only**                          | gulp comp  |
 
 ## Credits
-With special thanks to Kevin Powell for his YouTube tutorial called <a href="https://youtu.be/QgMQeLymAdU" target="_blank">Gulp v4 - Sass and BrowserSync setup (opens new tab)</a>.
+With special thanks to Kevin Powell for his YouTube tutorial called <a href="https://youtu.be/QgMQeLymAdU">Gulp v4 - Sass and BrowserSync setup</a>.
 
 Kevin Powell's GitHub profile: [https://github.com/kevin-powell](https://github.com/kevin-powell)
