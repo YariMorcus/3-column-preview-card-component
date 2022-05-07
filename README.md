@@ -5,6 +5,8 @@ This repository contains Gulp (build tool/taskrunner) including a complete setup
 Run `npm install` command to install all necessary dependencies.
 Otherwise Gulp will **not** work, and as a result browsersync and sass to css compilation will not run either.
 
+:large_blue_circle:  _This has been tested with node version v16.13.1 and npm version 8.1.2._
+
 ## Usage
 | Goal                                                  | Command    |
 |-------------------------------------------------------|------------|
