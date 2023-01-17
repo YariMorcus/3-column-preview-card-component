@@ -1,0 +1,10 @@
+// Entrypoint file
+
+// Forward reset file when _index.scss is @used
+@forward 'reset';
+
+// Forward base file when _index.scss is @used
+@forward 'base';
+
+// Forward typography file when _index.scss is @used
+@forward 'typography';

@@ -1,0 +1,24 @@
+// Body copy
+$body-font-size: 1.2rem; // 12px
+
+// Kumbh Sans Regular
+@font-face {
+    font-family: 'Kumbh Sans';
+    src: url('../fonts/KumbhSans-Regular.woff2') format('woff2'),
+        url('../fonts/KumbhSans-Regular.woff') format('woff'),
+        url('../fonts/KumbhSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+// Kumbh Sans Bold
+@font-face {
+    font-family: 'Kumbh Sans';
+    src: url('../fonts/KumbhSans-Bold.woff2') format('woff2'),
+        url('../fonts/KumbhSans-Bold.woff') format('woff'),
+        url('../fonts/KumbhSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
