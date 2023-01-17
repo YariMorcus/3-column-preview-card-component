@@ -1,0 +1,11 @@
+# Avoid your project being littered with annoying .DS_Store files!
+.DS_Store
+.prettierignore
+
+starter-files/*
+fonts/zips/*
+node_modules/*
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
