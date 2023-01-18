@@ -1,6 +1,7 @@
 @use '../base/typography' as t;
 
 @use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as v;
 
 .preview-card {
     border: 1px solid;
@@ -8,12 +9,25 @@
     max-width: 34rem;
     margin: 0 auto;
 
+    &--sedans {
+        background-color: v.$bright-orange;
+    }
+
+    &--suvs {
+        background-color: v.$dark-cyan;
+    }
+
+    &--luxury {
+        background-color: v.$very-dark-cyan;
+    }
+
     &__title {
         font-family: 'Big Shoulders Display', sans-serif;
     }
 
     &__text {
         font-size: t.$body-font-size;
+        color: v.$transparent-white;
     }
 
     &__text,
@@ -21,7 +35,8 @@
         font-family: 'Lexend Deca', sans-serif;
     }
 
+    &__title,
     &__button {
-        border: 1px solid red;
+        color: v.$very-light-gray;
     }
 }
