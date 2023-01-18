@@ -21,6 +21,14 @@ body {
 
 main {
     margin-top: 8rem;
+
+    @include m.breakpoint-md {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(min-content, 34rem));
+        margin-left: 2rem;
+        margin-right: 2rem;
+        justify-content: center;
+    }
 }
 
 /* A elements that don't have a class get default styles */
@@ -44,4 +52,8 @@ img {
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
+}
+
+.footer {
+    text-align: center;
 }

@@ -1,0 +1,27 @@
+@use '../base/typography' as t;
+
+@use '../abstracts/mixins' as m;
+
+.preview-card {
+    border: 1px solid;
+    min-width: 70%;
+    max-width: 34rem;
+    margin: 0 auto;
+
+    &__title {
+        font-family: 'Big Shoulders Display', sans-serif;
+    }
+
+    &__text {
+        font-size: t.$body-font-size;
+    }
+
+    &__text,
+    &__button {
+        font-family: 'Lexend Deca', sans-serif;
+    }
+
+    &__button {
+        border: 1px solid red;
+    }
+}
