@@ -4,13 +4,16 @@
 @use '../abstracts/variables' as v;
 
 .preview-card {
-    border: 1px solid;
     min-width: 70%;
-    max-width: 34rem;
+    max-width: 33rem;
     margin: 0 auto;
+    padding: 5rem;
 
     &--sedans {
         background-color: v.$bright-orange;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+
     }
 
     &--suvs {
@@ -19,10 +22,16 @@
 
     &--luxury {
         background-color: v.$very-dark-cyan;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
     }
 
     &__title {
-        font-family: 'Big Shoulders Display', sans-serif;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        font: 4rem 'Big Shoulders Display', sans-serif;
+        color: v.$very-light-gray;
+        text-transform: uppercase;
     }
 
     &__text {
@@ -35,8 +44,27 @@
         font-family: 'Lexend Deca', sans-serif;
     }
 
-    &__title,
     &__button {
-        color: v.$very-light-gray;
+        margin-top: 3rem;
+        padding: 1.3rem 2.9rem;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        background-color: v.$very-light-gray;
+        border: none;
+        border-radius: 3rem;
+        cursor: pointer;
+
+        &--sedans {
+            color: v.$bright-orange;
+        }
+
+        &--suvs {
+            color: v.$dark-cyan;
+        }
+
+        &--luxury {
+            color: v.$very-dark-cyan;
+        }
+
     }
 }
