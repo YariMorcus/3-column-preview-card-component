@@ -15,15 +15,20 @@ html {
 
 /* Set core body defaults */
 body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
 }
 
 main {
     margin-top: 8rem;
+    flex: 1;
 
     @include m.breakpoint-md {
         display: grid;
+        grid-template-rows: max-content;
         grid-template-columns: repeat(3, minmax(min-content, 34rem));
         margin-left: 2rem;
         margin-right: 2rem;
