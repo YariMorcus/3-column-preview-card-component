@@ -65,4 +65,17 @@ img {
     font-family: 'Lexend Deca', sans-serif;
     font-size: 1.2rem;
     text-align: center;
+
+    &__link {
+        color: v.$very-dark-cyan;
+
+        &:hover {
+            color: scale-color(v.$very-dark-cyan, $lightness: 10%);
+        }
+
+        &:focus-visible {
+            outline: 2px solid v.$black;
+            border-radius: 1px;
+        }
+    }
 }
