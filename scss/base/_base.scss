@@ -1,7 +1,7 @@
-// Import variables module
+// Import variables
 @use '../abstracts/variables' as v;
 
-// Import mixins module
+// Import mixins
 @use '../abstracts/mixins' as m;
 
 /* Set core root defaults */
@@ -30,11 +30,10 @@ main {
 
     @include m.breakpoint-md {
         display: grid;
-        grid-template-rows: max-content;
         grid-template-columns: repeat(3, minmax(min-content, 33rem));
         margin-left: 2rem;
         margin-right: 2rem;
-        justify-content: center;
+        place-content: center;
     }
 }
 

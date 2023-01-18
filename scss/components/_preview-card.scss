@@ -1,5 +1,7 @@
+// Import typography variables
 @use '../base/typography' as t;
 
+// Import mixins and variables
 @use '../abstracts/mixins' as m;
 @use '../abstracts/variables' as v;
 
