@@ -11,6 +11,12 @@
     margin: 0 auto;
     padding: 5rem;
 
+    @include m.breakpoint-md {
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 6rem;
+    }
+
     &--sedans {
         background-color: v.$bright-orange;
         border-top-left-radius: 1rem;
@@ -46,6 +52,7 @@
     }
 
     &__text {
+        flex: 1;
         font-size: t.$body-font-size;
         color: v.$transparent-white;
     }
@@ -64,6 +71,10 @@
         border: none;
         border-radius: 3rem;
         cursor: pointer;
+
+        @include m.breakpoint-md {
+            margin-top: 8rem;
+        }
 
         &--sedans {
             color: v.$bright-orange;
