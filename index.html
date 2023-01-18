@@ -58,5 +58,14 @@
   Challenge by <a class="footer__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
   Coded&nbsp;by&nbsp;<a class="footer__link" href="https://www.linkedin.com/in/yarimorcus" target="_blank">Yari&nbsp;Morcus</a>.
 </footer>
+<script>
+  document.querySelectorAll('.preview-card__button').forEach(button => {
+    button.addEventListener('click', () => {
+      const text = 'You sir found an easter egg';
+      const style = 'color: #fff; font-weight: bold;';
+      console.log(`%c${text} %s`, style, '😄');
+    })
+  })
+</script>
 </body>
 </html>
