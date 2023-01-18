@@ -14,6 +14,10 @@
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
 
+        @include m.breakpoint-md {
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 1rem;
+        }
     }
 
     &--suvs {
@@ -24,6 +28,11 @@
         background-color: v.$very-dark-cyan;
         border-bottom-left-radius: 1rem;
         border-bottom-right-radius: 1rem;
+
+        @include m.breakpoint-md {
+            border-top-right-radius: 1rem;
+            border-bottom-left-radius: 0;
+        }
     }
 
     &__title {
