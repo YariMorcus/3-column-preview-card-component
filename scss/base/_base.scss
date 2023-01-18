@@ -25,6 +25,7 @@ body {
 
 main {
     margin-top: 8rem;
+    margin-bottom: 4rem;
     flex: 1;
 
     @include m.breakpoint-md {
@@ -61,5 +62,7 @@ img {
 }
 
 .footer {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.2rem;
     text-align: center;
 }
