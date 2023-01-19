@@ -205,11 +205,14 @@
     "yargs-parser": "^5.0.1"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.13",
     "browser-sync": "^2.27.9",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-cli": "^2.3.0",
+    "gulp-postcss": "^9.0.1",
     "gulp-sass": "^5.1.0",
+    "postcss": "^8.4.21",
     "sass": "^1.51.0"
   },
   "scripts": {
