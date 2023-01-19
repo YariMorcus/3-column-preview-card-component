@@ -20,54 +20,54 @@
 </head>
 <body>
 
-<main>
+  <main>
 
-  <article class="preview-card preview-card--sedans">
-    <header>
-      <img class="preview-card__icon" srcset="img/icon-sedans.svg, 64w" sizes="(min-width: 1px) 64w" src="img/icon-sedans.png" alt="" width="64" height="40">
-      <h2 class="preview-card__title">Sedans</h2>
-    </header>
-    <p class="preview-card__text">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the cityor on your next road trip.</p>
-    <footer class="preview-card__footer">
-      <button class="preview-card__button preview-card__button--sedans">Learn more</button>
-    </footer> <!-- .preview-card__footer-->
-  </article> <!-- .preview-card-sedans-->
+    <article class="preview-card preview-card--sedans">
+      <header>
+        <img class="preview-card__icon" srcset="img/icon-sedans.svg, 64w" sizes="(min-width: 1px) 64w" src="img/icon-sedans.png" alt="" width="64" height="40">
+        <h2 class="preview-card__title">Sedans</h2>
+      </header>
+      <p class="preview-card__text">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the cityor on your next road trip.</p>
+      <footer class="preview-card__footer">
+        <button class="preview-card__button preview-card__button--sedans">Learn more</button>
+      </footer> <!-- .preview-card__footer-->
+    </article> <!-- .preview-card-sedans-->
 
-  <article class="preview-card preview-card--suvs">
-    <header>
-      <img class="preview-card__icon" srcset="img/icon-suvs.svg, 64w" sizes="(min-width: 1px) 64w" src="img/icon-suvs.png" alt="" width="64" height="40">
-      <h2 class="preview-card__title">SUVs</h2>
-    </header>
-    <p class="preview-card__text">Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.</p>
-    <footer class="preview-card__footer">
-      <button class="preview-card__button preview-card__button--suvs">Learn more</button>
-    </footer> <!-- .preview-card__footer-->
-  </article> <!-- .preview-card-suvs -->
+    <article class="preview-card preview-card--suvs">
+      <header>
+        <img class="preview-card__icon" srcset="img/icon-suvs.svg, 64w" sizes="(min-width: 1px) 64w" src="img/icon-suvs.png" alt="" width="64" height="40">
+        <h2 class="preview-card__title">SUVs</h2>
+      </header>
+      <p class="preview-card__text">Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.</p>
+      <footer class="preview-card__footer">
+        <button class="preview-card__button preview-card__button--suvs">Learn more</button>
+      </footer> <!-- .preview-card__footer-->
+    </article> <!-- .preview-card-suvs -->
 
-  <article class="preview-card preview-card--luxury">
-    <header>
-      <img class="preview-card__icon" srcset="img/icon-luxury.svg, 64w" sizes="(min-width: 1px) 64w" src="img/icon-luxury.png" alt="" width="64" height="40">
-      <h2 class="preview-card__title">Luxury</h2>
-    </header>
-    <p class="preview-card__text">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.</p>
-    <footer class="preview-card__footer">
-      <button class="preview-card__button preview-card__button--luxury">Learn more</button>
-    </footer> <!-- .preview-card__footer-->
-  </article> <!-- .preview-card-luxury -->
+    <article class="preview-card preview-card--luxury">
+      <header>
+        <img class="preview-card__icon" srcset="img/icon-luxury.svg, 64w" sizes="(min-width: 1px) 64w" src="img/icon-luxury.png" alt="" width="64" height="40">
+        <h2 class="preview-card__title">Luxury</h2>
+      </header>
+      <p class="preview-card__text">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.</p>
+      <footer class="preview-card__footer">
+        <button class="preview-card__button preview-card__button--luxury">Learn more</button>
+      </footer> <!-- .preview-card__footer-->
+    </article> <!-- .preview-card-luxury -->
 
-</main>
-<footer class="footer">
-  Challenge by <a class="footer__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-  Coded&nbsp;by&nbsp;<a class="footer__link" href="https://www.linkedin.com/in/yarimorcus" target="_blank">Yari&nbsp;Morcus</a>.
-</footer>
-<script>
-  document.querySelectorAll('.preview-card__button').forEach(button => {
-    button.addEventListener('click', () => {
-      const text = 'You sir found an easter egg';
-      const style = 'color: #fff; font-weight: bold;';
-      console.log(`%c${text} %s`, style, '😄');
+  </main>
+  <footer class="footer">
+    Challenge by <a class="footer__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded&nbsp;by&nbsp;<a class="footer__link" href="https://www.linkedin.com/in/yarimorcus" target="_blank">Yari&nbsp;Morcus</a>.
+  </footer>
+  <script>
+    document.querySelectorAll('.preview-card__button').forEach(button => {
+      button.addEventListener('click', () => {
+        const text = 'You sir found an easter egg';
+        const style = 'color: #fff; font-weight: bold;';
+        console.log(`%c${text} %s`, style, '😄');
+      })
     })
-  })
-</script>
+  </script>
 </body>
 </html>
