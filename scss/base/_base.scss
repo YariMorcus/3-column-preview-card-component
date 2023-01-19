@@ -1,7 +1,7 @@
-// Import variables module
+// Import variables
 @use '../abstracts/variables' as v;
 
-// Import mixins module
+// Import mixins
 @use '../abstracts/mixins' as m;
 
 /* Set core root defaults */
@@ -15,8 +15,26 @@ html {
 
 /* Set core body defaults */
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    background-color: v.$very-light-gray;
+}
+
+main {
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    flex: 1;
+
+    @include m.breakpoint-md {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(min-content, 33rem));
+        margin-left: 2rem;
+        margin-right: 2rem;
+        place-content: center;
+    }
 }
 
 /* A elements that don't have a class get default styles */
@@ -39,5 +57,25 @@ img {
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
+    }
+}
+
+.footer {
+    padding: 0 1.28rem 1.28rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+
+    &__link {
+        color: v.$very-dark-cyan;
+
+        &:hover {
+            color: scale-color(v.$very-dark-cyan, $lightness: 10%);
+        }
+
+        &:focus-visible {
+            outline: 2px solid v.$black;
+            border-radius: 1px;
+        }
     }
 }

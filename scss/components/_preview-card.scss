@@ -1,0 +1,105 @@
+// Import typography variables
+@use '../base/typography' as t;
+
+// Import mixins and variables
+@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as v;
+
+.preview-card {
+    min-width: 70%;
+    max-width: 33rem;
+    margin: 0 auto;
+    padding: 5rem;
+
+    @include m.breakpoint-md {
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 6rem;
+    }
+
+    &--sedans {
+        background-color: v.$bright-orange;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+
+        @include m.breakpoint-md {
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 1rem;
+        }
+    }
+
+    &--suvs {
+        background-color: v.$dark-cyan;
+    }
+
+    &--luxury {
+        background-color: v.$very-dark-cyan;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+
+        @include m.breakpoint-md {
+            border-top-right-radius: 1rem;
+            border-bottom-left-radius: 0;
+        }
+    }
+
+    &__title {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        font: 4rem 'Big Shoulders Display', sans-serif;
+        color: v.$very-light-gray;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        flex: 1;
+        font-size: t.$body-font-size;
+        color: v.$transparent-white;
+    }
+
+    &__text,
+    &__button {
+        font-family: 'Lexend Deca', sans-serif;
+    }
+
+    &__button {
+        margin-top: 3rem;
+        padding: 1.3rem 2.9rem;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        background-color: v.$very-light-gray;
+        border: 2px solid transparent;
+        border-radius: 3rem;
+        cursor: pointer;
+
+        @include m.breakpoint-md {
+            margin-top: 8rem;
+        }
+
+        &--sedans {
+            color: v.$bright-orange;
+        }
+
+        &--suvs {
+            color: v.$dark-cyan;
+        }
+
+        &--luxury {
+            color: v.$very-dark-cyan;
+        }
+
+        &--sedans:hover,
+        &--suvs:hover,
+        &--luxury:hover {
+            color: v.$transparent-white;
+            background-color: transparent;
+            border: 2px solid v.$very-light-gray;;
+        }
+
+        &--sedans:focus-visible,
+        &--suvs:focus-visible,
+        &--luxury:focus-visible {
+            outline: 2px solid v.$black;
+        }
+    }
+}

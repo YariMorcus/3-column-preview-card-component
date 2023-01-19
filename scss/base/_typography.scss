@@ -1,24 +1,25 @@
-// Body copy
-$body-font-size: 1.2rem; // 12px
+$body-font-size: 1.5rem; // 15px
 
-// Kumbh Sans Regular
 @font-face {
-    font-family: 'Kumbh Sans';
-    src: url('../fonts/KumbhSans-Regular.woff2') format('woff2'),
-        url('../fonts/KumbhSans-Regular.woff') format('woff'),
-        url('../fonts/KumbhSans-Regular.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'Big Shoulders Display';
+    src: url('../fonts/big-shoulders-display-bold.eot');
+    src: url('../fonts/big-shoulders-display-bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/big-shoulders-display-bold.woff2') format('woff2'),
+        url('../fonts/big-shoulders-display-bold.woff') format('woff'),
+        url('../fonts/big-shoulders-display-bold.ttf') format('truetype');
+    font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
-// Kumbh Sans Bold
 @font-face {
-    font-family: 'Kumbh Sans';
-    src: url('../fonts/KumbhSans-Bold.woff2') format('woff2'),
-        url('../fonts/KumbhSans-Bold.woff') format('woff'),
-        url('../fonts/KumbhSans-Bold.ttf') format('truetype');
-    font-weight: bold;
+    font-family: 'Lexend Deca';
+    src: url('../fonts/lexend-deca-regular.eot');
+    src: url('../fonts/lexend-deca-regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/lexend-deca-regular.woff2') format('woff2'),
+        url('../fonts/lexend-deca-regular.woff') format('woff'),
+        url('../fonts/lexend-deca-regular.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }

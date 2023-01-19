@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
+const cleanCSS = require('gulp-clean-css');
 const browserSync = require('browser-sync').create();
 
 // Compile Sass to CSS function
@@ -10,6 +11,9 @@ function compiler() {
 
     // Compile SCSS to CSS
     .pipe(sass().on('error', sass.logError))
+
+    // Minify the CSS
+    .pipe(cleanCSS({compatibility: 'ie8'}))
 
     // Save the CSS
     .pipe(gulp.dest('./css'))
@@ -36,7 +40,7 @@ function watch() {
     // Automatically compile SCSS to CSS
     gulp.watch('./scss/**/*.scss', compiler);
 
-    // Watch for changes in .html or .js files, 
+    // Watch for changes in .html or .js files,
     // If change detected, reload page automatically
     gulp.watch('./*.html').on('change', () => browserSync.reload() );
     gulp.watch('./js/**/*.js').on('change', () => browserSync.reload() );
