@@ -1,5 +1,7 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
+const autoprefixer = require('autoprefixer');
+const postcss = require('gulp-postcss');
 const cleanCSS = require('gulp-clean-css');
 const browserSync = require('browser-sync').create();
 
@@ -14,6 +16,9 @@ function compiler() {
 
     // Minify the CSS
     .pipe(cleanCSS({compatibility: 'ie8'}))
+
+    // Add vendor prefixes to CSS properties
+    .pipe(postcss([ autoprefixer() ]))
 
     // Save the CSS
     .pipe(gulp.dest('./css'))
