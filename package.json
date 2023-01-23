@@ -1,6 +1,6 @@
 {
-  "name": "project-name-here",
-  "description": "",
+  "name": "3-column preview card component",
+  "description": "Challenge by Frontend Mentor (https://www.frontendmentor.io?ref=challenge)",
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
